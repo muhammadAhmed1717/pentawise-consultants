@@ -1458,8 +1458,15 @@ button {
   .footer-h { zoom: 0.8; }
   .footer-col a { font-size: 14.5px; }
   .footer-socials img { height: 32px; }
-  .footer-bar-inner { height: 64px; }
-  .footer-copy { font-size: 11px; line-height: 1.45; max-width: 190px; }
+  .footer-bar {
+    padding-right: 0;
+  }
+  .footer-bar-inner { 
+    height: 99px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer-copy { font-size: 11px; line-height: 1.45; }
   .footer-h2h8 { width: 86px; }
 
   /* whatsapp + popup */
