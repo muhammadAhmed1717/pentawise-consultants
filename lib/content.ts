@@ -7,9 +7,9 @@ export const site = {
   whatsappHref: "https://wa.me/923317922227",
   email: "info.pentawise@gmail.com",
   socials: {
-    instagram: "#", // TODO: add the Instagram profile URL
-    linkedin: "#", // TODO: add the LinkedIn page URL
-    facebook: "#", // TODO: add the Facebook page URL
+    instagram: "https://www.instagram.com/pentawise.consultants?avpt=dDc2Z2ZqZ2k5aDQz",
+    linkedin: "https://www.linkedin.com/company/pentawise-consultants/",
+    facebook: "https://www.facebook.com/share/19keowqHYY/",
   },
   /**
    * The service descriptions are drawn as SVG so they match the approved
