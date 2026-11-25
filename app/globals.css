@@ -171,8 +171,8 @@ button {
 }
 .brand-logo {
   display: block;
-  width: 128px;
-  height: 128px;
+  width: 156px;
+  height: 156px;
   margin: -18px -12px -22px -20px;
 }
 .main-nav {
@@ -1174,6 +1174,7 @@ button {
 .footer-bar {
   background: linear-gradient(90deg, #1d1342 0%, #17204a 50%, #0f2c4a 100%);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-right: 96px;
 }
 .footer-bar-inner {
   height: 76px;
@@ -1321,7 +1322,7 @@ button {
   /* header */
   .hero { padding-bottom: 40px; }
   .site-header { padding-top: 8px; padding-bottom: 8px; }
-  .brand-logo { width: 84px; height: 84px; margin: -12px -8px -14px -14px; }
+  .brand-logo { width: 116px; height: 116px; margin: -12px -8px -14px -14px; }
   .main-nav { display: none; }
   .cta { height: 44px; padding: 0 20px; }
   .cta-long { display: none; }

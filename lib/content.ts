@@ -105,14 +105,14 @@ export const stories = [
 /** Options for the “Desired Country” field (alphabetical). */
 export const countries = [
   "Australia", "Canada", "Cyprus", "Finland", "France", "Germany", "Hungary", "Ireland", "Malaysia",
-  "Malta", "New Zealand", "Poland", "Spain", "Sweden", "Turkey", "UAE", "UK", "USA",
+  "Malta", "New Zealand", "Poland", "Spain", "Sweden", "Turkiye", "UAE", "UK", "USA",
 ];
 
 /** Footer: three columns of six countries, in the order of the approved design. */
 export const footerCountryColumns = [
   ["Malta", "Cyprus", "Spain", "New Zealand", "Ireland", "Finland"],
   ["Poland", "Hungary", "USA", "UK", "Australia", "Germany"],
-  ["Turkey", "UAE", "Canada", "Malaysia", "Sweden", "France"],
+  ["Turkiye", "UAE", "Canada", "Malaysia", "Sweden", "France"],
 ];
 
 export const footerCompanyLinks = [
