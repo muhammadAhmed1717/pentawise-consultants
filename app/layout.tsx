@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Jost, Montserrat, Questrial, Roboto, Unbounded } from "next/font/google";
+import SectionNavigation from "@/components/SectionNavigation";
 import "./globals.css";
 
 // Fonts are downloaded at build time and self-hosted by Next.js (no external requests).
@@ -31,7 +32,10 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${jost.variable} ${montserrat.variable} ${roboto.variable} ${unbounded.variable} ${questrial.variable}`}>
-      <body>{children}</body>
+      <body>
+        <SectionNavigation />
+        {children}
+      </body>
     </html>
   );
 }
