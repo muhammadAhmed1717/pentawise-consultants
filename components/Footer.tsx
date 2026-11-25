@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { footerCompanyLinks, footerCountryColumns, site } from "@/lib/content";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -68,7 +69,9 @@ export default function Footer() {
           <span className="footer-copy">
             © {new Date().getFullYear()} Pentawise Consultants. All&nbsp;rights&nbsp;reserved.
           </span>
-          <Image src="/images/brand/powered-by-h2h8.webp" alt="Powered by H2H8 Studios" width={360} height={157} sizes="118px" className="footer-h2h8" />
+          <Link href="https://www.h2h8studios.com/" target="_blank">
+            <Image src="/images/brand/powered-by-h2h8.webp" alt="Powered by H2H8 Studios" width={360} height={157} sizes="118px" className="footer-h2h8" />
+          </Link>
         </div>
       </div>
     </footer>
