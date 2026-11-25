@@ -27,12 +27,21 @@ export default function BoardingPassForm({ idPrefix, className = "" }: Props) {
     e.preventDefault();
     setStatus("sending");
     try {
-      const res = await fetch("/api/consultation", {
+      const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
+      if (!accessKey) throw new Error("Web3Forms access key is not configured.");
+
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(values),
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          ...values,
+          access_key: accessKey,
+          subject: "New consultation request — Pentawise Consultants",
+          from_name: "Pentawise Consultants Website",
+        }),
       });
-      if (!res.ok) throw new Error(`Request failed: ${res.status}`);
+      const result: { success?: boolean } = await res.json();
+      if (!res.ok || !result.success) throw new Error(`Web3Forms request failed: ${res.status}`);
       setStatus("sent");
       setValues(empty);
     } catch {

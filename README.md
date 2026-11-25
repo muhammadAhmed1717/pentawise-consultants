@@ -56,15 +56,18 @@ public/
 | Element | Behaviour |
 |---|---|
 | "Book a free Expert Consultation" (header) and "Book a Call" (FAQ) | Open the **boarding-pass form in a popup**. It closes with ✕, Esc or a click outside, and locks page scroll while open. |
-| Boarding-pass form (page + popup) | Validates required fields, POSTs JSON to `/api/consultation`, shows a thank-you message. |
+| Boarding-pass form (page + popup) | Validates required fields, submits directly to Web3Forms, shows a thank-you message. |
 | WhatsApp button | Fixed bottom-right on every page and device. Opens `wa.me/923317922227`. |
 | Phone menu | Dropdown with Home / Countries / Universities / Contact Us. |
 | FAQ | Accordion (one open at a time), accessible (`aria-expanded`, regions). |
 
-### Connect the form (TODO)
-`app/api/consultation/route.ts` validates the data and currently logs it. Forward
-`lead` to wherever Pentawise wants leads: email (Resend / Nodemailer), a CRM,
-Google Sheets or WhatsApp Business API. Keep API keys in `.env.local`.
+### Web3Forms email delivery
+Create a Web3Forms access key for `pentawise.consultants@gmail.com` at
+https://web3forms.com/, then set `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY` to that key
+in your local `.env.local` and in the Vercel project's Environment Variables
+(Production, Preview, and Development as needed). Redeploy after changing the
+Vercel variable. The key is designed for browser use by Web3Forms; the form
+submits directly to their API instead of proxying through a serverless route.
 
 ### Social links (TODO)
 Add the Instagram, LinkedIn and Facebook URLs in `lib/content.ts → site.socials`.
