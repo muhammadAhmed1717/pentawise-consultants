@@ -1392,6 +1392,7 @@ button {
   .stories-inner { gap: 36px; }
   .stories-heading { width: 223px; }
   .story-card { width: 236px; height: 295px; margin-right: 16px; }
+  .stories-dots { display: none;}
 
   /* contact + ticket */
   .contact-inner { gap: 32px; }
