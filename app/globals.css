@@ -1384,7 +1384,7 @@ button {
   .services-heading { width: 176px; }
   .services-grid { grid-template-columns: minmax(0, 1fr); gap: 36px; }
   .service { align-items: center; text-align: center; gap: 14px; }
-  .service-head { justify-content: center; }
+  .service-head { justify-content: center; margin-right: 15%; }
   .service-title { font-size: 21px; }
   .service-icon { width: 36px; height: 36px; }
 
