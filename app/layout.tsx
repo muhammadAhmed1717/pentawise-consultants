@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Jost, Montserrat, Questrial, Roboto, Unbounded } from "next/font/google";
+import SectionNavigation from "@/components/SectionNavigation";
 import "./globals.css";
 
 // Fonts are downloaded at build time and self-hosted by Next.js (no external requests).
@@ -20,6 +21,21 @@ export const metadata: Metadata = {
     images: ["/images/brand/pentawise-logo.webp"],
   },
   icons: { icon: "/images/brand/pentawise-mark.webp" },
+  authors: [{ name: 'H2H8 Studios', url: 'https://www.h2h8studios.com' }],
+  creator: 'H2H8 Studios',
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  url: 'https://www.pentawiseconsultants.com/',
+  creator: {
+    '@type': 'Organization',
+    name: 'H2H8 Studios',
+    url: 'https://www.h2h8studios.com',
+    description:
+      'H2H8 Studios is a digital agency offering branding and logo design, brand identity, packaging and social media design, website and mobile app development, Shopify store development, UI/UX design, SEO, Google and Meta ads, social media marketing, lead generation, influencer marketing, video production, motion graphics, product photography and AI video production, all under one roof.',
+  },
 };
 
 export const viewport: Viewport = {
@@ -31,7 +47,14 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${jost.variable} ${montserrat.variable} ${roboto.variable} ${unbounded.variable} ${questrial.variable}`}>
-      <body>{children}</body>
+      <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }}
+        />
+        <SectionNavigation />
+        {children}
+      </body>
     </html>
   );
 }

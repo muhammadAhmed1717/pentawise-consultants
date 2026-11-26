@@ -7,9 +7,9 @@ export const site = {
   whatsappHref: "https://wa.me/923317922227",
   email: "info.pentawise@gmail.com",
   socials: {
-    instagram: "#", // TODO: add the Instagram profile URL
-    linkedin: "#", // TODO: add the LinkedIn page URL
-    facebook: "#", // TODO: add the Facebook page URL
+    instagram: "https://www.instagram.com/pentawise.consultants?avpt=dDc2Z2ZqZ2k5aDQz",
+    linkedin: "https://www.linkedin.com/company/pentawise-consultants/",
+    facebook: "https://www.facebook.com/share/19keowqHYY/",
   },
   /**
    * The service descriptions are drawn as SVG so they match the approved
@@ -95,24 +95,43 @@ export const services: Service[] = [
 ];
 
 export const stories = [
-  { image: "/images/stories/hungary.webp", alt: "Master’s student visa approved for Hungary (University of Debrecen)" },
-  { image: "/images/stories/malaysia.webp", alt: "Bachelor’s student visa approved for Malaysia" },
-  { image: "/images/stories/france-bachelors.webp", alt: "Bachelor’s student visa approved for France" },
-  { image: "/images/stories/france-masters.webp", alt: "Master’s student visa approved for France" },
-  { image: "/images/stories/ireland.webp", alt: "Master’s student visa approved for Ireland" },
+  { image: "/images/stories/00.webp", alt: "Bachelor’s student visa approved for Hungary" },
+  { image: "/images/stories/01.webp", alt: "Bachelor’s student visa approved for Australia" },
+  { image: "/images/stories/02.webp", alt: "Master’s student visa approved for France" },
+  { image: "/images/stories/19.webp", alt: "Master’s student visa approved for UK" },
+  { image: "/images/stories/05.webp", alt: "Master’s student visa approved for Germany" },
+  { image: "/images/stories/09.webp", alt: "Master’s student visa approved for Ireland" },
+  { image: "/images/stories/20.webp", alt: "Master’s student visa approved for UK" },
+  { image: "/images/stories/10.webp", alt: "Master’s student visa approved for Malaysia" },
+  { image: "/images/stories/12.webp", alt: "Master’s student visa approved for Malta" },
+  { image: "/images/stories/14.webp", alt: "Bachelor’s student visa approved for Turkiye" },
+  { image: "/images/stories/18.webp", alt: "Bachelor’s student visa approved for UK" },
+  { image: "/images/stories/08.webp", alt: "Master’s student visa approved for Hungary (University of Debrecen)" },
+  { image: "/images/stories/16.webp", alt: "Bachelor’s student visa approved for UAE" },
+  { image: "/images/stories/04.webp", alt: "Bachelor’s student visa approved for France" },
+  { image: "/images/stories/21.webp", alt: "Bachelor’s student visa approved for UK" },
+  { image: "/images/stories/06.webp", alt: "Master’s student visa approved for Germany" },
+  { image: "/images/stories/07.webp", alt: "Master’s student visa approved for Germany" },
+  { image: "/images/stories/11.webp", alt: "Master’s student visa approved for Malaysia" },
+  { image: "/images/stories/13.webp", alt: "Master’s student visa approved for Malta" },
+  { image: "/images/stories/23.webp", alt: "Bachelor’s student visa approved for UK" },
+  { image: "/images/stories/03.webp", alt: "Bachelor’s student visa approved for France" },
+  { image: "/images/stories/15.webp", alt: "Bachelor’s student visa approved for Turkiye" },
+  { image: "/images/stories/17.webp", alt: "Bachelor’s student visa approved for UAE" },
+  { image: "/images/stories/22.webp", alt: "Bachelor’s student visa approved for UK" },
 ];
 
 /** Options for the “Desired Country” field (alphabetical). */
 export const countries = [
   "Australia", "Canada", "Cyprus", "Finland", "France", "Germany", "Hungary", "Ireland", "Malaysia",
-  "Malta", "New Zealand", "Poland", "Spain", "Sweden", "Turkey", "UAE", "UK", "USA",
+  "Malta", "New Zealand", "Poland", "Spain", "Sweden", "Turkiye", "UAE", "UK", "USA",
 ];
 
 /** Footer: three columns of six countries, in the order of the approved design. */
 export const footerCountryColumns = [
   ["Malta", "Cyprus", "Spain", "New Zealand", "Ireland", "Finland"],
   ["Poland", "Hungary", "USA", "UK", "Australia", "Germany"],
-  ["Turkey", "UAE", "Canada", "Malaysia", "Sweden", "France"],
+  ["Turkiye", "UAE", "Canada", "Malaysia", "Sweden", "France"],
 ];
 
 export const footerCompanyLinks = [

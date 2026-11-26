@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <header className="site-header container">
       <a href="#top" className="brand" aria-label="Pentawise Consultants home">
-        <Image src="/images/brand/pentawise-logo.webp" alt="Pentawise Consultants" width={320} height={320} priority sizes="128px" className="brand-logo" />
+        <Image src="/images/brand/pentawise-logo.webp" alt="Pentawise Consultants" width={320} height={320} priority sizes="156px" className="brand-logo" />
       </a>
 
       <nav className="main-nav" aria-label="Main">

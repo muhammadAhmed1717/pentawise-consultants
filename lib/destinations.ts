@@ -72,7 +72,7 @@ export const desktopTiles: DestinationTile[] = [
     "bob": 7
   },
   {
-    "name": "Turkey",
+    "name": "Turkiye",
     "image": "/images/destinations/turkey.webp",
     "left": 11.211,
     "top": 38.242,
@@ -382,7 +382,7 @@ export const mobileSlots: MobileSlot[] = [
         "image": "/images/destinations/usa.webp"
       },
       {
-        "name": "Turkey",
+        "name": "Turkiye",
         "image": "/images/destinations/turkey.webp"
       },
       {
