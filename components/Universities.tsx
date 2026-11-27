@@ -2,7 +2,7 @@ import Image from "next/image";
 import { LOGO_HEIGHT, LOGO_WIDTH, universities } from "@/lib/universities";
 
 /** Seconds each logo takes to scroll past, so the speed stays the same however many logos there are. */
-const SECONDS_PER_LOGO = 6;
+const SECONDS_PER_LOGO = 1;
 
 /** Endless logo marquee (pure CSS). The list is rendered twice for a seamless loop. */
 export default function Universities() {
