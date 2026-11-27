@@ -620,7 +620,7 @@ button {
 .stories-track {
   display: flex;
   width: max-content;
-  animation: marquee 36s linear infinite;
+  animation: marquee 60s linear infinite;
 }
 .story-card {
   flex: none;
