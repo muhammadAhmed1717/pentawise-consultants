@@ -21,7 +21,6 @@ app/
   page.tsx                page order: Hero → Destinations → Universities → Services
                           → Success Stories → Contact form → FAQ → Footer
   globals.css             all styles + animations (desktop first, phone ≤ 760px)
-  api/consultation/route.ts   receives the form (connect email/CRM here)
 components/               one file per section
 lib/
   content.ts              ALL text, phone, WhatsApp, email, socials, FAQs, countries

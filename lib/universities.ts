@@ -1,60 +1,48 @@
-export type University = { name: string; image: string; width: number; height: number; displayHeight: number };
+/** Partner logos. Every file is a 600×300 transparent canvas, so they all render in the same box. */
+export type University = { name: string; image: string };
+
+export const LOGO_WIDTH = 600;
+export const LOGO_HEIGHT = 300;
 
 export const universities: University[] = [
-  {
-    "name": "ICN Business School",
-    "image": "/images/universities/icn-business-school.webp",
-    "width": 314,
-    "height": 97,
-    "displayHeight": 42
-  },
-  {
-    "name": "Arden University",
-    "image": "/images/universities/arden-university.webp",
-    "width": 237,
-    "height": 140,
-    "displayHeight": 56
-  },
-  {
-    "name": "Linnaeus University",
-    "image": "/images/universities/linnaeus-university.webp",
-    "width": 440,
-    "height": 71,
-    "displayHeight": 26
-  },
-  {
-    "name": "IU International University of Applied Sciences",
-    "image": "/images/universities/iu-international-university.webp",
-    "width": 209,
-    "height": 140,
-    "displayHeight": 50
-  },
-  {
-    "name": "Lancaster University",
-    "image": "/images/universities/lancaster-university.webp",
-    "width": 436,
-    "height": 140,
-    "displayHeight": 46
-  },
-  {
-    "name": "Steinbeis University",
-    "image": "/images/universities/steinbeis-university.webp",
-    "width": 381,
-    "height": 140,
-    "displayHeight": 42
-  },
-  {
-    "name": "Blekinge Institute of Technology",
-    "image": "/images/universities/blekinge-institute-of-technology.webp",
-    "width": 140,
-    "height": 140,
-    "displayHeight": 66
-  },
-  {
-    "name": "Bahçeşehir University",
-    "image": "/images/universities/bahcesehir-university.webp",
-    "width": 111,
-    "height": 140,
-    "displayHeight": 56
-  }
+  { name: "Queen Mary University of London", image: "/images/universities/01.webp" },
+  { name: "University of Nicosia", image: "/images/universities/02.webp" },
+  { name: "International Business School", image: "/images/universities/03.webp" },
+  { name: "Adelaide University", image: "/images/universities/04.webp" },
+  { name: "ICN Business School", image: "/images/universities/05.webp" },
+  { name: "Murdoch University", image: "/images/universities/06.webp" },
+  { name: "University of Debrecen", image: "/images/universities/07.webp" },
+  { name: "Curtin University", image: "/images/universities/08.webp" },
+  { name: "University of Birmingham", image: "/images/universities/09.webp" },
+  { name: "Adelphi University", image: "/images/universities/10.webp" },
+  { name: "University of Leeds", image: "/images/universities/11.webp" },
+  { name: "Alexander College Cyprus", image: "/images/universities/12.webp" },
+  { name: "Trinity College Dublin", image: "/images/universities/13.webp" },
+  { name: "The University of Melbourne", image: "/images/universities/14.webp" },
+  { name: "Charles Darwin University", image: "/images/universities/15.webp" },
+  { name: "University of Liverpool", image: "/images/universities/16.webp" },
+  { name: "University of Leicester", image: "/images/universities/17.webp" },
+  { name: "Johns Hopkins University", image: "/images/universities/18.webp" },
+  { name: "University of Turku", image: "/images/universities/19.webp" },
+  { name: "Auburn University", image: "/images/universities/20.webp" },
+  { name: "Durham University", image: "/images/universities/21.webp" },
+  { name: "Seneca Polytechnic", image: "/images/universities/22.webp" },
+  { name: "IBAT Institute of Business & Technology", image: "/images/universities/23.webp" },
+  { name: "The University of Kansas", image: "/images/universities/24.webp" },
+  { name: "James Cook University", image: "/images/universities/25.webp" },
+  { name: "BSBI", image: "/images/universities/26.webp" },
+  { name: "SEAMK – Seinäjoki University of Applied Sciences", image: "/images/universities/27.webp" },
+  { name: "KEDGE Business School", image: "/images/universities/28.webp" },
+  { name: "MILA University", image: "/images/universities/29.webp" },
+  { name: "Ascencia Malta", image: "/images/universities/30.webp" },
+  { name: "Istinye University Istanbul", image: "/images/universities/31.webp" },
+  { name: "University of Illinois Urbana-Champaign", image: "/images/universities/32.webp" },
+  { name: "TBS Toulouse Business School", image: "/images/universities/33.webp" },
+  { name: "GBS Malta", image: "/images/universities/34.webp" },
+  { name: "Arden University", image: "/images/universities/35.webp" },
+  { name: "Linnaeus University", image: "/images/universities/36.webp" },
+  { name: "Asia Pacific University of Technology & Innovation", image: "/images/universities/37.webp" },
+  { name: "Concordia University Chicago", image: "/images/universities/38.webp" },
+  { name: "Biruni University", image: "/images/universities/39.webp" },
+  { name: "Dalarna University", image: "/images/universities/40.webp" },
 ];

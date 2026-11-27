@@ -504,10 +504,14 @@ button {
   padding-left: 8px;
   animation: marquee 42s linear infinite;
 }
+/* Every logo gets the same box; the 600×300 source canvases already hold each mark centred with padding. */
 .marquee-logo {
   flex: none;
   display: block;
-  margin-right: 88px;
+  width: 180px;
+  height: 90px;
+  object-fit: contain;
+  margin-right: 48px;
 }
 
 /* =========================================================================
@@ -616,7 +620,7 @@ button {
 .stories-track {
   display: flex;
   width: max-content;
-  animation: marquee 36s linear infinite;
+  animation: marquee 60s linear infinite;
 }
 .story-card {
   flex: none;
